@@ -2,33 +2,19 @@
 # coding: utf-8
 
 # # AMERICAN SIGN LANGUAGE Recognition
-# 
-# 
-# ## *BY TEAM 17:*
-# 
-# ### *Tanuj Singhal*
-# ### *Tarun Kumar*
-# ### *Ankit Varshney*
-
 
 # # The Objective of this project is an attempt to a model to identify Static American sign language in real run time 
 
 # ## Problem encountered during model:
-# ### Initially when we trained our Convolutional model on directly unprocessed real images model was stuck around accuracy of 40 %
+# ### Initially when we trained the Convolutional model on directly unprocessed real images model was stuck around accuracy of 40 %
 
 # # Steps to improve our model we took :
 # 
-#  ### *we took a real world dataset and did background subtration in it*
-#  ### *this improved our model's accuracy from around 40% to 80%*
-#  ### *To further imporve we data augmentation which is being done before feeding images to            train our model*
+#  ### *we took a real world dataset with background subtration in it*
+#  ### *this improved our model's accuracy from around 40% to over 90%*
+#  ### *To further improve data augmentation which is being done before feeding images to train our model*
 
 # In[16]:
-
-
-###IMP !!
-###Please unzip the mydata folder in project for this code to run
-###Unzipping might take some time
-
 # Importing libraries
 from keras.models import Sequential
 from keras.layers import Convolution2D

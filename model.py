@@ -14,7 +14,6 @@
 #  ### *this improved our model's accuracy from around 40% to over 90%*
 #  ### *To further improve data augmentation which is being done before feeding images to train our model*
 
-# In[16]:
 # Importing libraries
 from keras.models import Sequential
 from keras.layers import Convolution2D
@@ -47,11 +46,6 @@ my_model.compile(
               metrics = ['accuracy'])
 
 
-# # Data Augmentation
-
-# In[7]:
-
-
 # Data Augmentation and importing images from directory
 from keras.preprocessing.image import ImageDataGenerator
 train_datagen = ImageDataGenerator(
@@ -80,10 +74,6 @@ validation_generator = train_datagen.flow_from_directory(
     class_mode='categorical',
     subset='validation')
 
-
-# In[8]:
-
-
 # Fitting model
 model = my_model.fit_generator(
         training_set,
@@ -93,16 +83,9 @@ model = my_model.fit_generator(
         validation_steps = 285
       )
 
-
-# In[ ]:
-
 ## use following code if current model needs to be updated
 # import h5py
 # my_model.save('/my_model.h5')
-
-
-# In[14]:
-
 
 # Printing plots 
 import matplotlib.pyplot as plt

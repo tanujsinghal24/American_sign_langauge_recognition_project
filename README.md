@@ -1,6 +1,6 @@
 # American_sign_langauge_recognition_project
 
-I made this project during my summer internhsip ast IIT Kanpur.
+I made this project with my team during my summer internhsip ast IIT Kanpur.
 
 -Objective was to build a model to recognize ASL language to support Deaf people
 
